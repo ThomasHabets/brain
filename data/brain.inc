@@ -1,5 +1,10 @@
 #declare brain_left_hemisphere = object {
  mesh2 {
+   normal_vectors {
+     133350,
+     <1,0,0>,
+     #include"data/lh_normals.inc"
+   }
    vertex_vectors {
      133350,
      <0,0,0>,
@@ -21,6 +26,11 @@
 
 #declare brain_right_hemisphere = object {
  mesh2 {
+   normal_vectors {
+     133019,
+     <1,0,0>,
+     #include"data/rh_normals.inc"
+   }
    vertex_vectors {
      133019,
      <0,0,0>,
