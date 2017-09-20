@@ -11,6 +11,7 @@ light_source {
 }
 
 camera {
+  right x * 3840 / 2160
   location <0,0,-200>
   look_at <0,0,0>
 }

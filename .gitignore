@@ -1,1 +1,5 @@
 *~
+*.png
+data/lh_normals.inc
+data/rh_normals.inc
+videos/
