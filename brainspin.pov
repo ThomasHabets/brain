@@ -1,4 +1,10 @@
+#version 3.7;
 #include "data/brain.inc"
+
+global_settings {
+  assumed_gamma 1.4
+  ambient_light rgb<0,0,0>
+}
 
 // Spinning two-coloured brain.
 union {

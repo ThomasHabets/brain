@@ -1,15 +1,31 @@
+#version 3.7;
+
+//
+// Conditionals
+//
+
 #declare rad = 0;
+
+//
+// Includes.
+//
 
 #if (rad)
   #include "rad_def.inc"
 #end
-
 #include "data/brain.inc"
+
+//
+// Global settings
+//
 
 global_settings {
   #if (rad)
     radiosity { Rad_Settings(Radiosity_Normal, on, off)  }
   #end
+
+  assumed_gamma 1.4
+  ambient_light rgb<0,0,0>
 }
 
 //
