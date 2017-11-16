@@ -1,3 +1,11 @@
+// Thomas' brain
+//
+// Copyright (C) 2016-2017 Thomas Habets <thomas@habets.se>
+//
+// License: CC-BY <https://creativecommons.org/licenses/by/4.0/legalcode>
+//
+// https://github.com/ThomasHabets/brain
+
 #declare brain_left_hemisphere = mesh2 {
   normal_vectors {
     133350,
