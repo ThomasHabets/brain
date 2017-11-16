@@ -44,6 +44,7 @@ mri_convert \
     --in_type siemens
     media/XXXXXX/XXXXX_2016XXXX_XXXXXX_XXXXXX/T1W_3D_1_0022/XXX.2016.XX.XX.XX.XX.XX.XXXX.XXXX.IMA blaha.nii.gz
 export SUBJECTS_DIR=$(pwd)/subjects
+```
 
 ### 3. Convert from `nii` to… stuff (takes a few hours)
 
