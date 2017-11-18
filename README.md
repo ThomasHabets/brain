@@ -15,13 +15,31 @@ project with extensions like `.cc`, `.py`, `.hs`, etc… and also
 
 These are a function of the 3D model, so not checked in.
 
+### Python version
+
 ```
 for i in lh rh; do
-  python makenormal.py  data/${i}_vertices.inc data/${i}_faces.inc > data/${i}_normals.inc
+  python tools/makenormal.py  data/${i}_vertices.inc data/${i}_faces.inc > data/${i}_normals.inc
+done
+```
+
+### Haskell version
+
+```
+ghc tools/MakeNormal.hs
+for i in lh rh; do
+  tools/MakeNormal \
+      data/${i}_vertices.inc \
+      data/${i}_faces.inc \
+      data/${i}_normals.inc
 done
 ```
 
 ## Render
+
+```
+povray brainspin.ini
+```
 
 ## Assemble video
 
