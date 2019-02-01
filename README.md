@@ -47,6 +47,24 @@ povray brainspin.ini
 avconv -framerate 60 -f image2 -i brainspin%03d.png -b 65536k brainspin.mp4
 ```
 
+## Convert to STL and 3D-print
+
+### Convert to .OBJ
+
+```
+tools/make_obj.sh data/lh
+tools/make_obj.sh data/rh
+```
+
+### Convert from .OBJ to .STL
+
+http://www.greentoken.de/onlineconv/
+
+## 3D Print
+
+Shapeways accepts `.OBJ` files, so you don't have to convert to STL
+first.
+
 ## How the 3D model was created
 
 ### 1. Get MRI scan
