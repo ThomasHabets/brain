@@ -58,7 +58,8 @@ tools/make_obj.sh data/rh
 
 ### Convert from .OBJ to .STL
 
-http://www.greentoken.de/onlineconv/
+* http://www.greentoken.de/onlineconv/
+* https://www.makexyz.com/convert/obj-to-stl
 
 ## 3D Print
 

@@ -17,7 +17,13 @@ VERTNF="${INBASE}_normals.inc"
 FACEF="${INBASE}_faces.inc"
 
 (
+    echo "s 1"
+    echo "g model"
+    echo "s 1"
     sed "s/^/v/;s/[,<]/ /g;s/>//" "${VERTF}"
+    echo
     sed "s/^/vn/;s/[,<]/ /g;s/>//" "${VERTNF}"
+    echo
     sed "s/^/f/;s/[,<]/ /g;s/>//" "${FACEF}"
+    echo
 ) > "${INBASE}_object".obj
