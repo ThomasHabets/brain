@@ -114,3 +114,14 @@ grep -v \# lh.vec | sed -r "${RE}" > lh_vertices.inc
 grep -v \# rh.face | sed -r "${RE}" > rh_faces.inc
 grep -v \# lh.face | sed -r "${RE}" > lh_faces.inc
 ```
+
+### 6. Join the two brain halves (optional)
+
+```
+./tools/merge_rotate.py > brain.obj
+```
+
+Upload to https://anyconv.com/obj-to-glb-converter/
+
+https://products.aspose.app/3d/conversion/obj-to-glb can only do 30MB,
+and in this case it's over 40MB.
