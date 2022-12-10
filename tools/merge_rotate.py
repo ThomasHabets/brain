@@ -15,9 +15,10 @@ def rotate(line):
     return [line[0], line[1], str(y2), str(z2)]
 
 def inc(line, vinc):
-    if vinc == 0 or line[0] != 'f':
+    if line[0] != 'f':
         return line
-    return line[0], *[str(int(x)+vinc) for x in line[1:]]
+    inds = [int(x)+vinc for x in line[1:]]
+    return line[0], *['%d//%d' % (x,x) for x in inds]
 
 def read(fn, vinc=0):
     return [inc(rotate(x.strip('\n ').split(' ')), vinc) for x in open(fn) if x[0] not in 'gs']
